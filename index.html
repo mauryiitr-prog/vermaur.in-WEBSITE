@@ -1,3 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vermaur Farms</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f7f7f7;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#fff;
+padding:10px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+height:50px;
+width:auto;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+color:#2e7d32;
+}
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('hero.png');
+background-size:cover;
+background-position:center;
+height:650px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:20px;
+}
+
+.section{
+padding:60px 5%;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+color:#2e7d32;
+margin-bottom:40px;
+}
+
+.features,
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.feature,
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.card-content{
+text-align:center;
+}
+
+.about{
+background:white;
+padding:30px;
+border-radius:12px;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
 <header>
 
 <img src="logo.png" class="logo">
