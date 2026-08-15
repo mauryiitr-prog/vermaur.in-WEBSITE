@@ -11,19 +11,19 @@ const products = {
     },
 
     {
-      name: "AK Radiant Product 2",
-      image: "",
-      description: "Product description will be added here.",
-      price: "₹XXX",
-      amazon: "#"
+      name: "Heavy Duty Round Furniture Pads with Mounting Screws | Pack of 12 | Gutka ",
+      image: "Heavy Duty Round Furniture Pads with Mounting Screws.png",
+      description: "Non-Slip Furniture Leg Protectors for Chair, Table, Sofa, Bed | Floor Protector & Furniture Raiser",
+      price: "₹200",
+      amazon: "https://www.amazon.in/gp/product/B0H4RMGRC6"
     },
 
     {
-      name: "AK Radiant Product 3",
-      image: "",
-      description: "Product description will be added here.",
-      price: "₹XXX",
-      amazon: "#"
+      name: "Rope Climbing Ladder for Kids",
+      image: "Rope Climbing Ladder for Kids.png",
+      description: "Secure Safety Lock | Round 25 mm Rung | Wooden for Ease in Physical Activity | Indoor & Outdoor Climbing Ladder for Kids Age 3-10 Years | Garden, Playground & Home Gym",
+      price: "₹799",
+      amazon: "https://www.amazon.in/dp/B0H62VPWGS?th=1"
     },
 
     {
