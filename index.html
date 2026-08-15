@@ -808,177 +808,9 @@ Proudly sourced and packed in India.
 Our Products
 </h2>
 
-
-<div class="products">
-
-
-<!-- DAL BADI -->
-
-<div class="card">
-
-<img src="Premium-Dal-Badi.png">
-
-<div class="card-content">
-
-<h3>
-Premium Dal Badi
-</h3>
-
-<p>
-Premium Dal Badi, 400g | Protein-Rich
-Lentil Nuggets | Authentic Homemade Taste
-</p>
-
-<div class="price">
-₹550 / 400g
-</div>
-
-<a
-href="#"
-class="btn amazon-btn"
-target="_blank">
-🛒 Buy on Amazon
-</a>
-
-</div>
-
-</div>
-
-
-<!-- KALA NAMAK -->
-
-<div class="card">
-
-<img src="kala-namak-rice.png">
-
-<div class="card-content">
-
-<h3>
-Kala Namak Rice
-</h3>
-
-<p>
-Traditional aromatic rice from Eastern UP.
-</p>
-
-<div class="price">
-₹380 / Kg
-</div>
-
-<a
-href="#"
-class="btn amazon-btn"
-target="_blank">
-🛒 Buy on Amazon
-</a>
-
-</div>
-
-</div>
-
-
-<!-- SATTU -->
-
-<div class="card">
-
-<img src="jau-chana-sattu.png">
-
-<div class="card-content">
-
-<h3>
-Jau + Chana Sattu
-</h3>
-
-<p>
-Jaljeera Flavour | Ready to Drink |
-10 Sachets × 25g
-</p>
-
-<div class="price">
-₹230 / Pack
-</div>
-
-<a
-href="#"
-class="btn amazon-btn"
-target="_blank">
-🛒 Buy on Amazon
-</a>
-
-</div>
-
-</div>
-
-
-<!-- SONA MASOORI -->
-
-<div class="card">
-
-<img src="sona-masoori-rice.png">
-
-<div class="card-content">
-
-<h3>
-Sona Masoori Rice
-</h3>
-
-<p>
-Light, fluffy and aromatic rice.
-</p>
-
-<div class="price">
-₹149 / Kg
-</div>
-
-<a
-href="#"
-class="btn amazon-btn"
-target="_blank">
-🛒 Buy on Amazon
-</a>
-
-</div>
-
-</div>
-
-
-<!-- DOODH MALAI -->
-
-<div class="card">
-
-<img src="doodh-malai-rice.png">
-
-<div class="card-content">
-
-<h3>
-Doodh Malai Rice
-</h3>
-
-<p>
-Rich, creamy and premium taste.
-</p>
-
-<div class="price">
-₹179 / Kg
-</div>
-
-<a
-href="#"
-class="btn amazon-btn"
-target="_blank">
-🛒 Buy on Amazon
-</a>
-
-</div>
-
-</div>
-
-
-</div>
+<div class="products" id="vermaurFarmsProducts"></div>
 
 </section>
-
-
 <!-- ABOUT -->
 
 <section class="section">
@@ -1167,13 +999,74 @@ function showRadiant(){
     loadAKRadiantProducts();
 
 }
+function loadVermaurFarmsProducts(){
 
+    const container = document.getElementById("vermaurFarmsProducts");
+
+    if(!container) return;
+
+    container.innerHTML = "";
+
+    products.vermaurFarms.forEach(product => {
+
+        let imageHTML = "";
+
+        if(product.image){
+
+            imageHTML = `
+                <img src="${product.image}" alt="${product.name}">
+            `;
+
+        }else{
+
+            imageHTML = `
+                <div class="product-placeholder">
+                    Product Image
+                </div>
+            `;
+
+        }
+
+        container.innerHTML += `
+
+            <div class="card">
+
+                ${imageHTML}
+
+                <div class="card-content">
+
+                    <h3>${product.name}</h3>
+
+                    <p>${product.description}</p>
+
+                    <div class="price">
+                        ${product.price}
+                    </div>
+
+                    <a
+                        href="${product.amazon}"
+                        class="btn amazon-btn"
+                        target="_blank">
+                        🛒 Buy on Amazon
+                    </a>
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
+
+}
 
 function showFarms(){
 
     hideAll();
 
     document.getElementById("farmsPage").style.display="block";
+
+    loadVermaurFarmsProducts();
 
 }
 
