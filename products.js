@@ -34,6 +34,14 @@ const products = {
       amazon: "https://www.amazon.in/dp/B0H4S748MH"
     },
     {
+      name: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving",
+      image: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving.png",
+      description: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving, Cabinets, Showcases & Furniture Support, 8 Inch, Pack of 2 ( Extra Screws and gulli)
+",
+      price: "₹250",
+      amazon: "https://www.amazon.in/dp/B0H4S26TNR"
+    },
+    {
       name: "Garden Hose Spray Gun Heavy Duty High Pressure",
       image: "Garden Hose Spray Gun Heavy Duty High Pressure.png",
       description: "Brass Adjustable Water Nozzle with Stainless Steel Hose Clamp | Ergonomic Water Spray for Car Wash, Plant Watering and Lawn Care | Pack of 1 with lock",
@@ -51,7 +59,7 @@ const products = {
       image: "Premium-Dal-Badi.png",
       description: "Premium Dal Badi, 400g | Protein-Rich Lentil Nuggets | Authentic Homemade Taste",
       price: "₹550 / 400g",
-      amazon: "#"
+      amazon: "https://www.amazon.in/dp/B0H4W28LV7"
     },
 
     {
@@ -59,7 +67,7 @@ const products = {
       image: "kala-namak-rice.png",
       description: "Traditional aromatic rice from Eastern UP.",
       price: "₹380 / Kg",
-      amazon: "#"
+      amazon: "https://www.amazon.in/dp/B0H4ZK2PZK"
     },
 
     {
@@ -67,7 +75,7 @@ const products = {
       image: "jau-chana-sattu.png",
       description: "Jaljeera Flavour | Ready to Drink | 10 Sachets × 25g",
       price: "₹230 / Pack",
-      amazon: "#"
+      amazon: "https://www.amazon.in/dp/B0H6VHGJ2H"
     },
 
     {
@@ -75,7 +83,7 @@ const products = {
       image: "sona-masoori-rice.png",
       description: "Light, fluffy and aromatic rice.",
       price: "₹149 / Kg",
-      amazon: "#"
+      amazon: "https://www.amazon.in/dp/B0H4ZLMJPG"
     },
 
     {
@@ -83,7 +91,7 @@ const products = {
       image: "doodh-malai-rice.png",
       description: "Rich, creamy and premium taste.",
       price: "₹179 / Kg",
-      amazon: "#"
+      amazon: "https://www.amazon.in/dp/B0H4ZXDLBM"
     }
 
   ]
