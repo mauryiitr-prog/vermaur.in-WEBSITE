@@ -27,18 +27,18 @@ const products = {
     },
 
     {
-      name: "AK Radiant Product 4",
-      image: "",
-      description: "Product description will be added here.",
-      price: "₹XXX",
-      amazon: "#"
+      name: "8 Inch Heavy Duty L Angle Bracket",
+      image: "8 Inch Heavy Duty L Angle Bracket.png",
+      description: "8 Inch Heavy Duty L Angle Bracket for Wooden Shelves, Wall Shelf, Marron Powder Coated for Home, Shop, Showroom, Size 8 x 5 Inches, 8 Screws & Wall Plugs, Pack of 2 ( 35kg Load Capacity)",
+      price: "₹299",
+      amazon: "https://www.amazon.in/dp/B0H4S748MH"
     },
     {
-      name: "AK Radiant Product 5",
-      image: "",
-      description: "Product description will be added here.",
-      price: "₹XXX",
-      amazon: "#"
+      name: "Garden Hose Spray Gun Heavy Duty High Pressure",
+      image: "Garden Hose Spray Gun Heavy Duty High Pressure.png",
+      description: "Brass Adjustable Water Nozzle with Stainless Steel Hose Clamp | Ergonomic Water Spray for Car Wash, Plant Watering and Lawn Care | Pack of 1 with lock",
+      price: "₹200",
+      amazon: "https://www.amazon.in/dp/B0HCQCK1XL"
     }
 
   ],
