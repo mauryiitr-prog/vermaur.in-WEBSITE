@@ -897,6 +897,7 @@ href="https://wa.me/919120033340?text=Hello%20Vermaur%20Farms,%20I%20want%20to%2
 </div>
 
 
+     
 <!-- =====================================================
      JAVASCRIPT
 ===================================================== -->
@@ -968,37 +969,6 @@ function loadAKRadiantProducts(){
 }
 
 
-function hideAll(){
-
-    document.getElementById("companyPage").style.display="none";
-
-    document.getElementById("radiantPage").style.display="none";
-
-    document.getElementById("farmsPage").style.display="none";
-
-    window.scrollTo(0,0);
-
-}
-
-
-function showCompany(){
-
-    hideAll();
-
-    document.getElementById("companyPage").style.display="block";
-
-}
-
-
-function showRadiant(){
-
-    hideAll();
-
-    document.getElementById("radiantPage").style.display="block";
-
-    loadAKRadiantProducts();
-
-}
 function loadVermaurFarmsProducts(){
 
     const container = document.getElementById("vermaurFarmsProducts");
@@ -1060,6 +1030,44 @@ function loadVermaurFarmsProducts(){
 
 }
 
+
+function hideAll(){
+
+    document.getElementById("companyPage").style.display="none";
+
+    document.getElementById("radiantPage").style.display="none";
+
+    document.getElementById("farmsPage").style.display="none";
+
+    window.scrollTo(0,0);
+
+}
+
+
+function showCompany(){
+
+    hideAll();
+
+    document.getElementById("companyPage").style.display="block";
+
+    history.replaceState(null, "", window.location.pathname);
+
+}
+
+
+function showRadiant(){
+
+    hideAll();
+
+    document.getElementById("radiantPage").style.display="block";
+
+    loadAKRadiantProducts();
+
+    history.replaceState(null, "", "#ak-radiant");
+
+}
+
+
 function showFarms(){
 
     hideAll();
@@ -1068,8 +1076,50 @@ function showFarms(){
 
     loadVermaurFarmsProducts();
 
+    history.replaceState(null, "", "#vermaur-farms");
+
 }
 
+
+window.addEventListener("popstate", routePage);
+
+
+function routePage(){
+
+    const hash = window.location.hash;
+
+    if(hash === "#ak-radiant"){
+
+        hideAll();
+
+        document.getElementById("radiantPage").style.display="block";
+
+        loadAKRadiantProducts();
+
+    }
+
+    else if(hash === "#vermaur-farms"){
+
+        hideAll();
+
+        document.getElementById("farmsPage").style.display="block";
+
+        loadVermaurFarmsProducts();
+
+    }
+
+    else{
+
+        hideAll();
+
+        document.getElementById("companyPage").style.display="block";
+
+    }
+
+}
+
+
+routePage();
 
 </script>
 </body>
