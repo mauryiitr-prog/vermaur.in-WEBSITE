@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vermaur Farms</title>
+
+<title>Vermaur | AK Radiant & Vermaur Farms</title>
 
 <style>
 
@@ -14,15 +15,21 @@ box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:#f7f7f7;
 color:#333;
 line-height:1.6;
 }
 
+/* ================= HEADER ================= */
+
 header{
 background:#fff;
-padding:15px 5%;
+padding:12px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -32,28 +39,23 @@ top:0;
 z-index:999;
 }
 
-.logo{
-height:75px;
-width:auto;
-}
-  .brand{
+.brand{
 display:flex;
 align-items:center;
 gap:12px;
+cursor:pointer;
 }
 
-.brand h2{
-margin-top:5px;
-font-size:28px;
-color:#2e7d32;
-font-weight:700;
+.logo{
+height:65px;
+width:auto;
 }
-  .brand-text h2{
+
+.brand-text h2{
 margin:0;
-font-size:26px;
+font-size:25px;
 color:#2e7d32;
 font-weight:700;
-line-height:1.1;
 }
 
 .brand-text p{
@@ -62,93 +64,324 @@ font-size:12px;
 color:#777;
 }
 
+nav{
+display:flex;
+align-items:center;
+}
+
 nav a{
 margin-left:20px;
 text-decoration:none;
 font-weight:bold;
 color:#2e7d32;
+cursor:pointer;
 }
 
-.hero{
+/* ================= MAIN LANDING PAGE ================= */
+
+#companyPage{
+display:block;
+}
+
+.company-hero{
+min-height:620px;
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
 url('hero.png');
 background-size:cover;
 background-position:center;
-height:650px;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
+padding:40px 20px;
 }
 
-.btn{
+.company-hero h1{
+font-size:58px;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+.company-hero p{
+font-size:21px;
+max-width:750px;
+margin:auto;
+}
+
+.company-intro{
+padding:60px 5%;
+text-align:center;
+background:white;
+}
+
+.company-intro h2{
+font-size:36px;
+color:#333;
+margin-bottom:15px;
+}
+
+.company-intro p{
+max-width:850px;
+margin:auto;
+color:#666;
+font-size:17px;
+}
+
+/* ================= BUSINESS CARDS ================= */
+
+.business-section{
+padding:70px 5%;
+background:#f7f7f7;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+margin-bottom:45px;
+}
+
+.business-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.business-card{
+background:white;
+border-radius:18px;
+padding:45px 30px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.business-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.business-icon{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.business-card h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.business-card p{
+color:#666;
+margin-bottom:25px;
+}
+
+.radiant-title{
+color:#263238;
+}
+
+.farms-title{
+color:#2e7d32;
+}
+
+.explore-btn{
 display:inline-block;
-padding:12px 24px;
-background:#25D366;
+padding:13px 28px;
+border-radius:8px;
 color:white;
 text-decoration:none;
-border-radius:8px;
-margin-top:20px;
+font-weight:bold;
+cursor:pointer;
+border:none;
+font-size:16px;
 }
+
+.radiant-btn{
+background:#263238;
+}
+
+.farms-btn{
+background:#2e7d32;
+}
+
+/* ================= COMMON PAGE ================= */
+
+.business-page{
+display:none;
+}
+
+.page-banner{
+padding:60px 20px;
+text-align:center;
+color:white;
+}
+
+.page-banner h1{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.page-banner p{
+font-size:18px;
+}
+
+.radiant-banner{
+background:linear-gradient(135deg,#263238,#455a64);
+}
+
+.farms-banner{
+background:linear-gradient(135deg,#1b5e20,#43a047);
+}
+
+/* ================= PRODUCTS ================= */
 
 .section{
 padding:60px 5%;
 }
 
-.section-title{
-text-align:center;
-font-size:36px;
-color:#2e7d32;
-margin-bottom:40px;
-}
-
-.features,
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
+max-width:1200px;
+margin:auto;
 }
 
-.feature,
 .card{
 background:white;
 padding:20px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+border-radius:14px;
+box-shadow:0 2px 12px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card img{
 width:100%;
 height:300px;
 object-fit:cover;
-border-radius:8px;
+border-radius:10px;
+}
+
+.product-placeholder{
+height:300px;
+border-radius:10px;
+background:#eeeeee;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#777;
+font-size:18px;
+padding:20px;
 }
 
 .card-content{
 text-align:center;
+padding-top:15px;
+}
+
+.card-content h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.card-content p{
+color:#666;
+font-size:14px;
 }
 
 .price{
-font-size:24px;
+font-size:22px;
 font-weight:bold;
 color:#2e7d32;
-margin:12px 0;
+margin:15px 0;
 }
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-top:10px;
+font-weight:bold;
+border:none;
+cursor:pointer;
+}
+
+.amazon-btn{
+background:#ff9900;
+color:#111;
+}
+
+.whatsapp-btn{
+background:#25D366;
+}
+
+.back-btn{
+background:#555;
+margin-bottom:20px;
+}
+
+/* ================= WHY CHOOSE ================= */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.feature h3{
+margin:10px 0;
+}
+
+/* ================= ABOUT ================= */
 
 .about{
 background:white;
-padding:30px;
+padding:35px;
 border-radius:12px;
+max-width:1100px;
+margin:auto;
 }
+
+.about p{
+line-height:1.9;
+text-align:justify;
+}
+
+/* ================= FOOTER ================= */
 
 footer{
 background:#1b5e20;
 color:white;
 text-align:center;
 padding:40px 20px;
+margin-top:40px;
 }
+
+footer p{
+margin:6px;
+}
+
+/* ================= WHATSAPP ================= */
 
 .whatsapp{
 position:fixed;
@@ -160,65 +393,466 @@ padding:15px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+z-index:1000;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+header{
+padding:10px 4%;
+}
+
+.logo{
+height:50px;
+}
+
+.brand-text h2{
+font-size:19px;
+}
+
+.brand-text p{
+font-size:9px;
+}
+
+nav a{
+font-size:13px;
+margin-left:10px;
+}
+
+.company-hero{
+min-height:520px;
+}
+
+.company-hero h1{
+font-size:38px;
+}
+
+.company-hero p{
+font-size:17px;
+}
+
+.business-grid{
+grid-template-columns:1fr;
+}
+
+.business-card{
+padding:35px 20px;
+}
+
+.page-banner h1{
+font-size:34px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.card img,
+.product-placeholder{
+height:260px;
+}
+
+.whatsapp{
+right:12px;
+bottom:12px;
+padding:12px 16px;
+font-size:14px;
+}
+
+}
+
+@media(max-width:480px){
+
+nav a{
+font-size:11px;
+margin-left:7px;
+}
+
+.brand-text{
+display:none;
+}
+
+.company-hero h1{
+font-size:32px;
+}
+
+.company-hero p{
+font-size:15px;
+}
+
 }
 
 </style>
-
 </head>
 
 <body>
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
 <header>
 
-<div class="brand">
+<div class="brand" onclick="showCompany()">
 
 <img src="logo.png" class="logo">
 
 <div class="brand-text">
-<h2>Vermaur Farms</h2>
-<p>Premium Agricultural Products</p>
+<h2>VERMAUR</h2>
+<p>Building Products. Creating Value.</p>
 </div>
 
 </div>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
 
+<a onclick="showCompany()">Home</a>
+
+<a onclick="showRadiant()">AK Radiant</a>
+
+<a onclick="showFarms()">Vermaur Farms</a>
+
+</nav>
 
 </header>
 
-<section class="hero" id="home">
+
+<!-- =====================================================
+     COMPANY LANDING PAGE
+===================================================== -->
+
+<div id="companyPage">
+
+<section class="company-hero">
+
 <div>
 
-<p style="font-size:18px;color:#d8ffd8;">
-🌾 FSSAI Licensed | Pan India Delivery
-</p>
-
-<h1>
-Pure Grains. Honest Taste.<br>
-Traditional Quality.
-</h1>
+<h1>VERMAUR</h1>
 
 <p>
-Premium Rice, Dal Badi & Traditional Food Products
+Building Products. Creating Value.
 </p>
 
-<a href="https://wa.me/919120033340?text=Hello%20Vermaur%20Farms,%20I%20want%20to%20know%20about%20your%20products"
-class="btn">
-Order on WhatsApp
-</a>
+<p style="margin-top:15px;font-size:16px;">
+An Indian business group working across consumer,
+utility and agricultural products.
+</p>
 
 </div>
+
 </section>
+
+
+<section class="company-intro">
+
+<h2>Welcome to Vermaur</h2>
+
+<p>
+Vermaur is a diversified Indian business venture focused on
+bringing useful, quality-driven products to customers.
+Our businesses operate across consumer utility products
+and agricultural & food products.
+</p>
+
+</section>
+
+
+<section class="business-section">
+
+<h2 class="section-title">
+Our Businesses
+</h2>
+
+<div class="business-grid">
+
+
+<!-- AK RADIANT -->
+
+<div class="business-card">
+
+<div class="business-icon">
+🏭
+</div>
+
+<h2 class="radiant-title">
+AK Radiant
+</h2>
+
+<p>
+Consumer & Utility Products
+</p>
+
+<p>
+Practical, innovative and everyday utility products
+designed for modern households.
+</p>
+
+<button
+class="explore-btn radiant-btn"
+onclick="showRadiant()">
+Explore AK Radiant →
+</button>
+
+</div>
+
+
+<!-- VERMAUR FARMS -->
+
+<div class="business-card">
+
+<div class="business-icon">
+🌾
+</div>
+
+<h2 class="farms-title">
+Vermaur Farms
+</h2>
+
+<p>
+Agriculture & Food Products
+</p>
+
+<p>
+Premium rice, traditional food products and
+farm-based products sourced with care.
+</p>
+
+<button
+class="explore-btn farms-btn"
+onclick="showFarms()">
+Explore Vermaur Farms →
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- =====================================================
+     AK RADIANT PAGE
+===================================================== -->
+
+<div id="radiantPage" class="business-page">
+
+<section class="page-banner radiant-banner">
+
+<h1>AK Radiant</h1>
+
+<p>
+Smart • Practical • Everyday Utility Products
+</p>
+
+</section>
+
 
 <section class="section">
 
-<div class="features">
+<button
+class="btn back-btn"
+onclick="showCompany()">
+← Back to Vermaur
+</button>
+
+<h2 class="section-title">
+AK Radiant Products
+</h2>
+
+
+<div class="products">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="card">
+
+<div class="product-placeholder">
+Mosquito Net<br>
+Stick Holder
+</div>
+
+<div class="card-content">
+
+<h3>
+Mosquito Net Stick Holder
+</h3>
+
+<p>
+Heavy Duty No-Drill Bed Pole Holder
+for Mosquito Net | Pack of 2
+</p>
+
+<div class="price">
+₹XXX
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 2 -->
+
+<div class="card">
+
+<div class="product-placeholder">
+AK Radiant<br>
+Product Image
+</div>
+
+<div class="card-content">
+
+<h3>
+AK Radiant Product 2
+</h3>
+
+<p>
+Product description will be added here.
+</p>
+
+<div class="price">
+₹XXX
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 3 -->
+
+<div class="card">
+
+<div class="product-placeholder">
+AK Radiant<br>
+Product Image
+</div>
+
+<div class="card-content">
+
+<h3>
+AK Radiant Product 3
+</h3>
+
+<p>
+Product description will be added here.
+</p>
+
+<div class="price">
+₹XXX
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 4 -->
+
+<div class="card">
+
+<div class="product-placeholder">
+AK Radiant<br>
+Product Image
+</div>
+
+<div class="card-content">
+
+<h3>
+AK Radiant Product 4
+</h3>
+
+<p>
+Product description will be added here.
+</p>
+
+<div class="price">
+₹XXX
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<footer>
+
+<h2>AK Radiant</h2>
+
+<p>Consumer & Utility Products</p>
+
+<p>© 2026 Vermaur. All Rights Reserved.</p>
+
+</footer>
+
+</div>
+
+
+<!-- =====================================================
+     VERMAUR FARMS PAGE
+===================================================== -->
+
+<div id="farmsPage" class="business-page">
+
+<section class="page-banner farms-banner">
+
+<h1>Vermaur Farms</h1>
+
+<p>
+Premium Agricultural & Food Products
+</p>
+
+</section>
+
+
+<section class="section">
+
+<button
+class="btn back-btn"
+onclick="showCompany()">
+← Back to Vermaur
+</button>
+
+
+<section class="features">
 
 <div class="feature">
 <h2>1000+</h2>
@@ -226,153 +860,271 @@ Order on WhatsApp
 </div>
 
 <div class="feature">
-<h2>4+</h2>
+<h2>5+</h2>
 <p>Products</p>
 </div>
 
 <div class="feature">
 <h2>100%</h2>
-<p>Natural Quality</p>
+<p>Quality Focus</p>
 </div>
 
 <div class="feature">
-<h2>4.8★</h2>
-<p>Customer Rating</p>
-</div>
-
+<h2>Pan India</h2>
+<p>Delivery</p>
 </div>
 
 </section>
 
+</section>
+
+
 <section class="section">
 
 <h2 class="section-title">
-Why Choose Vermaur
+Why Choose Vermaur Farms
 </h2>
 
 <div class="features">
 
 <div class="feature">
+
 🌾
+
 <h3>Farm Fresh</h3>
-<p>Directly sourced from trusted farms.</p>
+
+<p>
+Directly sourced from trusted farms.
+</p>
+
 </div>
 
+
 <div class="feature">
+
 ✅
+
 <h3>Hygienic Packing</h3>
-<p>Packed with care and safety.</p>
+
+<p>
+Packed with care and safety.
+</p>
+
 </div>
 
+
 <div class="feature">
+
 🚚
+
 <h3>Pan India Delivery</h3>
-<p>Delivery available across India.</p>
+
+<p>
+Delivery available across India.
+</p>
+
 </div>
 
+
 <div class="feature">
+
 🇮🇳
+
 <h3>Made in India</h3>
-<p>Proudly sourced and packed in India.</p>
+
+<p>
+Proudly sourced and packed in India.
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="section" id="products">
+
+<!-- FARMS PRODUCTS -->
+
+<section class="section">
 
 <h2 class="section-title">
 Our Products
 </h2>
 
+
 <div class="products">
-  
+
+
+<!-- DAL BADI -->
 
 <div class="card">
+
 <img src="Premium-Dal-Badi.png">
 
 <div class="card-content">
-<h3>Premium Dal Badi</h3>
 
-<p>Vermaur Farms Premium Dal Badi, 400g | Protein-Rich Lentil Nuggets | Authentic Homemade Taste | Quick as snacks & Easy Cooking</p>
+<h3>
+Premium Dal Badi
+</h3>
 
-<div class="price">₹550 / 400gram</div>
+<p>
+Premium Dal Badi, 400g | Protein-Rich
+Lentil Nuggets | Authentic Homemade Taste
+</p>
 
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
+<div class="price">
+₹550 / 400g
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
 </a>
 
 </div>
+
 </div>
 
-  
+
+<!-- KALA NAMAK -->
+
 <div class="card">
+
 <img src="kala-namak-rice.png">
 
 <div class="card-content">
-<h3>Kala Namak Rice</h3>
-<p>Traditional aromatic rice from Eastern UP.</p>
-<div class="price">₹380 / Kg</div>
 
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
+<h3>
+Kala Namak Rice
+</h3>
+
+<p>
+Traditional aromatic rice from Eastern UP.
+</p>
+
+<div class="price">
+₹380 / Kg
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
 </a>
-</div>
+
 </div>
 
-  <div class="card">
+</div>
+
+
+<!-- SATTU -->
+
+<div class="card">
+
 <img src="jau-chana-sattu.png">
 
 <div class="card-content">
-<h3>Jau + Chana Sattu (Jaljeera Flavour) </h3>
-<p>Ready to Drink | Traditional Stone Chakki Ground | High Protein | 10 Sachets × 25g | Net Weight 250g</p>
-<div class="price">₹230 / Kg</div>
 
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
+<h3>
+Jau + Chana Sattu
+</h3>
+
+<p>
+Jaljeera Flavour | Ready to Drink |
+10 Sachets × 25g
+</p>
+
+<div class="price">
+₹230 / Pack
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
 </a>
-</div>
+
 </div>
 
-  
+</div>
 
-  
+
+<!-- SONA MASOORI -->
+
 <div class="card">
+
 <img src="sona-masoori-rice.png">
 
 <div class="card-content">
-<h3>Sona Masoori Rice</h3>
-<p>Light, fluffy and aromatic rice.</p>
 
-<div class="price">₹149 / Kg</div>
+<h3>
+Sona Masoori Rice
+</h3>
 
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
+<p>
+Light, fluffy and aromatic rice.
+</p>
+
+<div class="price">
+₹149 / Kg
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
 </a>
+
 </div>
+
 </div>
+
+
+<!-- DOODH MALAI -->
 
 <div class="card">
+
 <img src="doodh-malai-rice.png">
 
 <div class="card-content">
-<h3>Doodh Malai Rice</h3>
-<p>Rich, creamy and premium taste.</p>
 
-<div class="price">₹179 / Kg</div>
+<h3>
+Doodh Malai Rice
+</h3>
 
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
+<p>
+Rich, creamy and premium taste.
+</p>
+
+<div class="price">
+₹179 / Kg
+</div>
+
+<a
+href="#"
+class="btn amazon-btn"
+target="_blank">
+🛒 Buy on Amazon
 </a>
+
 </div>
+
 </div>
+
 
 </div>
 
 </section>
 
-<section class="section" id="about">
+
+<!-- ABOUT -->
+
+<section class="section">
 
 <div class="about">
 
@@ -380,79 +1132,128 @@ Order Now
 About Vermaur Farms
 </h2>
 
-<p style="max-width:900px;margin:auto;line-height:1.9;text-align:justify;">
-        Vermaur Farms is dedicated to bringing premium-quality rice, traditional food products, and authentic farm-fresh goodness directly from trusted Indian farms to households across the country.
-Founded with a vision to preserve India's rich agricultural heritage, we focus on sourcing carefully selected grains and traditional products that deliver purity, nutrition, and exceptional taste. Our commitment is to provide customers with food that is natural, hygienically packed, and produced with the highest standards of quality and safety.
-Our product range includes premium varieties of rice such as Kala Namak Rice, Sona Masoori Rice, Doodh Malai Rice, along with traditional foods like Dal Badi and other farm-based products. Every product is selected and packed with care to ensure freshness and customer satisfaction.
-At Vermaur Farms, we believe that great food begins at the farm. By working closely with farmers and maintaining strict quality standards, we strive to deliver authentic flavors, trusted quality, and a wholesome food experience to every customer.
+<p>
+Vermaur Farms is dedicated to bringing premium-quality
+rice, traditional food products, and authentic farm-fresh
+goodness directly from trusted Indian farms to households
+across the country.
 </p>
 
 <br>
 
 <p>
-FSSAI License: 22726749000098
+Founded with a vision to preserve India's rich agricultural
+heritage, we focus on sourcing carefully selected grains
+and traditional products that deliver purity, nutrition,
+and exceptional taste.
+</p>
+
+<br>
+
+<p>
+Our product range includes premium varieties of rice such
+as Kala Namak Rice, Sona Masoori Rice and Doodh Malai Rice,
+along with traditional foods like Dal Badi and other
+farm-based products.
+</p>
+
+<br>
+
+<p>
+At Vermaur Farms, we believe that great food begins at the
+farm. By working closely with farmers and maintaining
+strict quality standards, we strive to deliver authentic
+flavors and trusted quality.
+</p>
+
+<br>
+
+<p>
+<strong>FSSAI License:</strong> 22726749000098
 </p>
 
 <p>
-FSSAI State License: 12726066000657
+<strong>FSSAI State License:</strong> 12726066000657
 </p>
 
 </div>
 
 </section>
 
-<section class="section">
 
-<h2 class="section-title">
-Customer Reviews
-</h2>
+<footer>
 
-<div class="products">
+<h2>Vermaur Farms</h2>
 
-<div class="card">
-<div class="card-content">
-⭐⭐⭐⭐⭐
-<p>Excellent aroma and premium quality.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="card-content">
-⭐⭐⭐⭐⭐
-<p>Authentic traditional taste.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="card-content">
-⭐⭐⭐⭐⭐
-<p>Great packaging and timely delivery.</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<footer id="contact">
-
-<h2>Contact Us</h2>
+<p>Premium Agricultural Products</p>
 
 <p>📞 +91 9120033340</p>
 
 <p>📧 vermaurfarms@gmail.com</p>
 
-<p>🌐 www.vermaur.in</p>
-
 <p>🚚 Pan India Delivery</p>
 
-<p>
-© 2026 Vermaur Farms. All Rights Reserved.
-</p>
+<p>© 2026 Vermaur Farms. All Rights Reserved.</p>
 
 </footer>
 
-<a class="whatsapp"
+<a
+class="whatsapp"
 href="https://wa.me/919120033340?text=Hello%20Vermaur%20Farms,%20I%20want%20to%20know%20about%20your%20products">
+
 💬 WhatsApp
+
 </a>
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function hideAll(){
+
+document.getElementById("companyPage").style.display="none";
+
+document.getElementById("radiantPage").style.display="none";
+
+document.getElementById("farmsPage").style.display="none";
+
+window.scrollTo(0,0);
+
+}
+
+
+function showCompany(){
+
+hideAll();
+
+document.getElementById("companyPage").style.display="block";
+
+}
+
+
+function showRadiant(){
+
+hideAll();
+
+document.getElementById("radiantPage").style.display="block";
+
+}
+
+
+function showFarms(){
+
+hideAll();
+
+document.getElementById("farmsPage").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>
