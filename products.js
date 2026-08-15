@@ -12,7 +12,7 @@ const products = {
 
     {
       name: "Heavy Duty Round Furniture Pads with Mounting Screws | Pack of 12 | Gutka ",
-      image: "Heavy Duty Round Furniture Pads with Mounting Screws.png",
+      image: "Heavy Duty Round Furniture Pads with Mounting Screws.PNG",
       description: "Non-Slip Furniture Leg Protectors for Chair, Table, Sofa, Bed | Floor Protector & Furniture Raiser",
       price: "₹200",
       amazon: "https://www.amazon.in/gp/product/B0H4RMGRC6"
