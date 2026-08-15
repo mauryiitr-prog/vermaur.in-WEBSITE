@@ -5,8 +5,8 @@ const products = {
     {
       name: "Mosquito Net Stick Holder",
       image: "mosquito-net-holder.png",
-      description: "Heavy Duty No-Drill Bed Pole Holder for Mosquito Net | Pack of 2",
-      price: "₹XXX",
+      description: "Heavy Duty No-Drill Bed Pole Holder for Mosquito Net",
+      price: "₹123",
       amazon: "https://www.amazon.in/gp/product/B0H9ZM3PYY?th=1"
     },
 
