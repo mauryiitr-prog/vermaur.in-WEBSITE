@@ -36,8 +36,7 @@ const products = {
     {
       name: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving",
       image: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving.png",
-      description: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving, Cabinets, Showcases & Furniture Support, 8 Inch, Pack of 2 ( Extra Screws and gulli)
-",
+      description: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving, Cabinets, Showcases & Furniture Support, 8 Inch, Pack of 2 ( Extra Screws and gulli)",
       price: "₹250",
       amazon: "https://www.amazon.in/dp/B0H4S26TNR"
     },
