@@ -7,7 +7,7 @@ const products = {
       image: "mosquito-net-holder.png",
       description: "Heavy Duty No-Drill Bed Pole Holder for Mosquito Net | Pack of 2",
       price: "₹XXX",
-      amazon: "#"
+      amazon: "https://www.amazon.in/gp/product/B0H9ZM3PYY?th=1"
     },
 
     {
