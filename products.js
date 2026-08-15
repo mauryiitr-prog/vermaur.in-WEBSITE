@@ -32,6 +32,13 @@ const products = {
       description: "Product description will be added here.",
       price: "₹XXX",
       amazon: "#"
+    },
+    {
+      name: "AK Radiant Product 5",
+      image: "",
+      description: "Product description will be added here.",
+      price: "₹XXX",
+      amazon: "#"
     }
 
   ],
