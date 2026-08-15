@@ -1069,115 +1069,115 @@ href="https://wa.me/919120033340?text=Hello%20Vermaur%20Farms,%20I%20want%20to%2
      JAVASCRIPT
 ===================================================== -->
 
-<script>
 <script src="products.js"></script>
-     <script>
+
+<script>
 
 function loadAKRadiantProducts(){
 
-const container = document.getElementById("akRadiantProducts");
+    const container = document.getElementById("akRadiantProducts");
 
-if(!container) return;
+    if(!container) return;
 
-container.innerHTML = "";
+    container.innerHTML = "";
 
-products.akRadiant.forEach(product => {
+    products.akRadiant.forEach(product => {
 
-let imageHTML = "";
+        let imageHTML = "";
 
-if(product.image){
+        if(product.image){
 
-imageHTML = `
-<img src="${product.image}" alt="${product.name}">
-`;
+            imageHTML = `
+                <img src="${product.image}" alt="${product.name}">
+            `;
 
-}else{
+        }else{
 
-imageHTML = `
-<div class="product-placeholder">
-AK Radiant<br>
-Product Image
-</div>
-`;
+            imageHTML = `
+                <div class="product-placeholder">
+                    AK Radiant<br>
+                    Product Image
+                </div>
+            `;
+
+        }
+
+        container.innerHTML += `
+
+            <div class="card">
+
+                ${imageHTML}
+
+                <div class="card-content">
+
+                    <h3>${product.name}</h3>
+
+                    <p>${product.description}</p>
+
+                    <div class="price">
+                        ${product.price}
+                    </div>
+
+                    <a
+                        href="${product.amazon}"
+                        class="btn amazon-btn"
+                        target="_blank">
+                        🛒 Buy on Amazon
+                    </a>
+
+                </div>
+
+            </div>
+
+        `;
+
+    });
 
 }
 
-container.innerHTML += `
 
-<div class="card">
-
-${imageHTML}
-
-<div class="card-content">
-
-<h3>${product.name}</h3>
-
-<p>${product.description}</p>
-
-<div class="price">
-${product.price}
-</div>
-
-<a
-href="${product.amazon}"
-class="btn amazon-btn"
-target="_blank">
-🛒 Buy on Amazon
-</a>
-
-</div>
-
-</div>
-
-`;
-
-});
-
-}
-
-loadAKRadiantProducts();
-
-</script>
 function hideAll(){
 
-document.getElementById("companyPage").style.display="none";
+    document.getElementById("companyPage").style.display="none";
 
-document.getElementById("radiantPage").style.display="none";
+    document.getElementById("radiantPage").style.display="none";
 
-document.getElementById("farmsPage").style.display="none";
+    document.getElementById("farmsPage").style.display="none";
 
-window.scrollTo(0,0);
+    window.scrollTo(0,0);
 
 }
 
 
 function showCompany(){
 
-hideAll();
+    hideAll();
 
-document.getElementById("companyPage").style.display="block";
+    document.getElementById("companyPage").style.display="block";
 
 }
 
 
 function showRadiant(){
 
-hideAll();
+    hideAll();
 
-document.getElementById("radiantPage").style.display="block";
+    document.getElementById("radiantPage").style.display="block";
+
+    loadAKRadiantProducts();
 
 }
 
 
 function showFarms(){
 
-hideAll();
+    hideAll();
 
-document.getElementById("farmsPage").style.display="block";
+    document.getElementById("farmsPage").style.display="block";
 
 }
 
-</script>
 
+</script>
 </body>
 </html>
