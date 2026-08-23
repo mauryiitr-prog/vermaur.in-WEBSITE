@@ -46,8 +46,19 @@ const products = {
       description: "Brass Adjustable Water Nozzle with Stainless Steel Hose Clamp | Ergonomic Water Spray for Car Wash, Plant Watering and Lawn Care | Pack of 1 with lock",
       price: "₹200",
       amazon: "https://www.amazon.in/dp/B0HCQCK1XL"
+    },
+    {
+      name: "Wooden Rod,Stick for Macramé, 12 Inch ",
+      image: "wooden rod.png",
+      description: "Wooden Rod, 12 Inch Length 1 feet, 1 Inch Diameter 25mm, Wooden Dowel, Danda, Stick for Macramé, Craft & DIY, Pack of 3",
+      price: "₹199",
+      amazon: "https://www.amazon.in/dp/B0HG3N6XFG"
     }
 
+
+
+
+    
   ],
 
 
