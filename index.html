@@ -966,6 +966,8 @@ function loadAKRadiantProducts(){
                         href="${product.amazon}"
                         class="btn amazon-btn"
                         target="_blank">
+                        data-product="${product.name}"
+                        data-business="AK Radiant">
                         🛒 Buy on Amazon
                     </a>
 
@@ -1028,6 +1030,8 @@ function loadVermaurFarmsProducts(){
                         href="${product.amazon}"
                         class="btn amazon-btn"
                         target="_blank">
+                        data-product="${product.name}"
+                        data-business="Vermaur Farms">
                         🛒 Buy on Amazon
                     </a>
 
@@ -1131,6 +1135,22 @@ function routePage(){
 
 
 routePage();
+     // ================= AMAZON PRODUCT TRACKING =================
+
+document.addEventListener("click", function(e) {
+
+    const amazonLink = e.target.closest("a.amazon-btn");
+
+    if (!amazonLink) return;
+
+    gtag("event", "amazon_click", {
+        product_name: amazonLink.dataset.product,
+        business: amazonLink.dataset.business,
+        link_url: amazonLink.href
+    });
+
+});
+     //=================================================================
 
 </script>
 </body>
