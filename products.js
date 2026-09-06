@@ -14,7 +14,7 @@ const products = {
       name: "Heavy Duty Round Furniture Pads with Mounting Screws | Pack of 12 | Gutka ",
       image: "Heavy Duty Round Furniture Pads with Mounting Screws.PNG",
       description: "Non-Slip Furniture Leg Protectors for Chair, Table, Sofa, Bed | Floor Protector & Furniture Raiser",
-      price: "₹200",
+      price: "₹240",
       amazon: "https://www.amazon.in/gp/product/B0H4RMGRC6"
     },
 
@@ -30,21 +30,21 @@ const products = {
       name: "8 Inch Heavy Duty L Angle Bracket",
       image: "8 Inch Heavy Duty L Angle Bracket.png",
       description: "8 Inch Heavy Duty L Angle Bracket for Wooden Shelves, Wall Shelf, Marron Powder Coated for Home, Shop, Showroom, Size 8 x 5 Inches, 8 Screws & Wall Plugs, Pack of 2 ( 35kg Load Capacity)",
-      price: "₹299",
+      price: "₹399",
       amazon: "https://www.amazon.in/dp/B0H4S748MH"
     },
     {
       name: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving",
       image: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving.png",
       description: "Heavy Duty Metal F Bracket for Wooden & Glass Shelving, Cabinets, Showcases & Furniture Support, 8 Inch, Pack of 2 ( Extra Screws and gulli)",
-      price: "₹250",
+      price: "₹299",
       amazon: "https://www.amazon.in/dp/B0H4S26TNR"
     },
     {
       name: "Garden Hose Spray Gun Heavy Duty High Pressure",
       image: "Garden Hose Spray Gun Heavy Duty High Pressure.png",
       description: "Brass Adjustable Water Nozzle with Stainless Steel Hose Clamp | Ergonomic Water Spray for Car Wash, Plant Watering and Lawn Care | Pack of 1 with lock",
-      price: "₹200",
+      price: "₹249",
       amazon: "https://www.amazon.in/dp/B0HCQCK1XL"
     },
     {
@@ -92,7 +92,7 @@ const products = {
       name: "Sona Masoori Rice",
       image: "sona-masoori-rice.png",
       description: "Light, fluffy and aromatic rice.",
-      price: "₹149 / Kg",
+      price: "₹175 / Kg",
       amazon: "https://www.amazon.in/dp/B0H4ZLMJPG"
     },
 
@@ -100,7 +100,7 @@ const products = {
       name: "Doodh Malai Rice",
       image: "doodh-malai-rice.png",
       description: "Rich, creamy and premium taste.",
-      price: "₹179 / Kg",
+      price: "₹200 / Kg",
       amazon: "https://www.amazon.in/dp/B0H4ZXDLBM"
     }
 
