@@ -6,7 +6,7 @@ const products = {
       name: "Mosquito Net Stick Holder",
       image: "mosquito-net-holder.png",
       description: "Heavy Duty No-Drill Bed Pole Holder for Mosquito Net",
-      price: "₹123",
+      price: "₹130",
       amazon: "https://www.amazon.in/gp/product/B0H9ZM3PYY?th=1"
     },
 
@@ -14,7 +14,7 @@ const products = {
       name: "Heavy Duty Round Furniture Pads with Mounting Screws | Pack of 12 | Gutka ",
       image: "Heavy Duty Round Furniture Pads with Mounting Screws.PNG",
       description: "Non-Slip Furniture Leg Protectors for Chair, Table, Sofa, Bed | Floor Protector & Furniture Raiser",
-      price: "₹240",
+      price: "₹249",
       amazon: "https://www.amazon.in/gp/product/B0H4RMGRC6"
     },
 
@@ -22,7 +22,7 @@ const products = {
       name: "Rope Climbing Ladder for Kids",
       image: "Rope Climbing Ladder for Kids.png",
       description: "Secure Safety Lock | Round 25 mm Rung | Wooden for Ease in Physical Activity | Indoor & Outdoor Climbing Ladder for Kids Age 3-10 Years | Garden, Playground & Home Gym",
-      price: "₹799",
+      price: "₹899",
       amazon: "https://www.amazon.in/dp/B0H62VPWGS?th=1"
     },
 
@@ -30,7 +30,7 @@ const products = {
       name: "8 Inch Heavy Duty L Angle Bracket",
       image: "8 Inch Heavy Duty L Angle Bracket.png",
       description: "8 Inch Heavy Duty L Angle Bracket for Wooden Shelves, Wall Shelf, Marron Powder Coated for Home, Shop, Showroom, Size 8 x 5 Inches, 8 Screws & Wall Plugs, Pack of 2 ( 35kg Load Capacity)",
-      price: "₹399",
+      price: "₹499",
       amazon: "https://www.amazon.in/dp/B0H4S748MH"
     },
     {
@@ -51,7 +51,7 @@ const products = {
       name: "Wooden Rod,Stick for Macramé, 12 Inch ",
       image: "wooden rod.png",
       description: "Wooden Rod, 12 Inch Length 1 feet, 1 Inch Diameter 25mm, Wooden Dowel, Danda, Stick for Macramé, Craft & DIY, Pack of 3",
-      price: "₹199",
+      price: "₹249",
       amazon: "https://www.amazon.in/dp/B0HG3N6XFG"
     }
 
@@ -84,7 +84,7 @@ const products = {
       name: "Jau + Chana Sattu",
       image: "jau-chana-sattu.png",
       description: "Jaljeera Flavour | Ready to Drink | 10 Sachets × 25g",
-      price: "₹230 / Pack",
+      price: "₹220 / Pack",
       amazon: "https://www.amazon.in/dp/B0H6VHGJ2H"
     },
 
