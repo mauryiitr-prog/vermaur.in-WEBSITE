@@ -6,7 +6,7 @@ const products = {
       name: "Mosquito Net Stick Holder",
       image: "mosquito-net-holder.png",
       description: "Heavy Duty No-Drill Bed Pole Holder for Mosquito Net",
-      price: "₹130",
+      price: "₹149",
       amazon: "https://www.amazon.in/gp/product/B0H9ZM3PYY?th=1"
     },
 
@@ -14,7 +14,7 @@ const products = {
       name: "Heavy Duty Round Furniture Pads with Mounting Screws | Pack of 12 | Gutka ",
       image: "Heavy Duty Round Furniture Pads with Mounting Screws.PNG",
       description: "Non-Slip Furniture Leg Protectors for Chair, Table, Sofa, Bed | Floor Protector & Furniture Raiser",
-      price: "₹249",
+      price: "₹239",
       amazon: "https://www.amazon.in/gp/product/B0H4RMGRC6"
     },
 
@@ -22,7 +22,7 @@ const products = {
       name: "Rope Climbing Ladder for Kids",
       image: "Rope Climbing Ladder for Kids.png",
       description: "Secure Safety Lock | Round 25 mm Rung | Wooden for Ease in Physical Activity | Indoor & Outdoor Climbing Ladder for Kids Age 3-10 Years | Garden, Playground & Home Gym",
-      price: "₹899",
+      price: "₹999",
       amazon: "https://www.amazon.in/dp/B0H62VPWGS?th=1"
     },
 
@@ -84,7 +84,7 @@ const products = {
       name: "Jau + Chana Sattu",
       image: "jau-chana-sattu.png",
       description: "Jaljeera Flavour | Ready to Drink | 10 Sachets × 25g",
-      price: "₹220 / Pack",
+      price: "₹250 / Pack",
       amazon: "https://www.amazon.in/dp/B0H6VHGJ2H"
     },
 
